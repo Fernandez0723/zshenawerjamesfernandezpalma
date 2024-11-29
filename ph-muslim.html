@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muslims in the Philippines</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .section-overlay {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-overlay::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .section-content {
+            position: relative;
+            z-index: 10;
+        }
+        .gallery-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-50 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center">
+                <span class="mr-2">🕌</span> World of Islam
+            </div>
+            <div class="space-x-6">
+                <a href="paste.txt" class="hover:text-blue-300 transition duration-300">Home</a>
+                <a href="#overview" class="hover:text-blue-300 transition duration-300">Overview</a>
+                <a href="#regions" class="hover:text-blue-300 transition duration-300">Regions</a>
+                <a href="#culture" class="hover:text-blue-300 transition duration-300">Culture</a>
+                <a href="#challenges" class="hover:text-blue-300 transition duration-300">Challenges</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section-overlay h-screen flex items-center justify-center text-center"
+             style="background-image: url('/api/placeholder/1600/900');">
+        <div class="section-content text-white px-6">
+            <h1 class="text-5xl font-bold mb-6 text-white">Muslims in the Philippines</h1>
+            <p class="text-xl max-w-3xl mx-auto text-white leading-relaxed">
+                Exploring the rich history, diverse communities, and significant contributions 
+                of Filipino Muslims to the nation's cultural tapestry.
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section-overlay py-16"
+             style="background-image: url('/api/placeholder/1600/900');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Historical Overview</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="/api/placeholder/400/300" alt="Pre-Colonial Islam" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Pre-Colonial Roots</h3>
+                    <p>Islam arrived in the Philippines through Arab traders and Malay missionaries as early as the 13th century, long before Spanish colonization.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="/api/placeholder/400/300" alt="Muslim Sultanates" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Sultanates</h3>
+                    <p>Powerful Muslim sultanates like Sulu and Maguindanao developed sophisticated political and social systems, resisting Spanish colonization.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="/api/placeholder/400/300" alt="Modern Filipino Muslims" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Contemporary Presence</h3>
+                    <p>Today, Muslims comprise about 5-6% of the Philippine population, primarily in Mindanao and parts of the Sulu Archipelago.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regions Section -->
+    <section id="regions" class="section-overlay py-16"
+             style="background-image: url('/api/placeholder/1600/900');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Key Muslim Regions</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="/api/placeholder/600/400" alt="Mindanao" class="w-full h-64 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Mindanao</h3>
+                    <p>The primary homeland of Filipino Muslims, with significant populations of Maguindanaon, Maranao, and Tausug peoples. Home to the Autonomous Region in Muslim Mindanao (ARMM).</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="/api/placeholder/600/400" alt="Sulu Archipelago" class="w-full h-64 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Sulu Archipelago</h3>
+                    <p>A historic center of Islamic culture, known for the Sultanate of Sulu and rich maritime traditions. Home to diverse ethnic groups like the Tausug and Sama-Bajau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="section-overlay py-16"
+             style="background-image: url('/api/placeholder/1600/900');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Cultural Richness</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="/api/placeholder/400/300" alt="Traditional Clothing" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Traditional Attire</h3>
+                    <p>Distinctive clothing like the malong and traditional Islamic wear reflect the unique cultural identity of Filipino Muslims.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="/api/placeholder/400/300" alt="Islamic Arts" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Arts and Crafts</h3>
+                    <p>Rich traditions of weaving, metalwork, and intricate designs that blend Islamic artistic principles with indigenous Filipino styles.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="/api/placeholder/400/300" alt="Culinary Traditions" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Culinary Heritage</h3>
+                    <p>Unique cuisine influenced by Islamic dietary laws and local ingredients, featuring dishes like marinated meats and special rice preparations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="challenges" class="section-overlay py-16 bg-gray-100"
+             style="background-image: url('/api/placeholder/1600/900');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Contemporary Challenges</h2>
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-90 p-8 rounded-lg shadow-xl">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-700">Understanding and Resilience</h3>
+                <p class="mb-4">
+                    Filipino Muslims have faced significant historical and contemporary challenges, including social marginalization, 
+                    economic disparities, and periods of conflict in Mindanao.
+                </p>
+                <h4 class="text-xl font-semibold mb-2 text-blue-600">Key Considerations:</h4>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Ongoing efforts to achieve meaningful autonomy and self-determination</li>
+                    <li>Promoting interfaith dialogue and understanding</li>
+                    <li>Addressing economic and educational disparities</li>
+                    <li>Preserving cultural identity while participating in broader Filipino society</li>
+                </ul>
+                <p class="mt-4 italic text-gray-600">
+                    "Unity in diversity is our strength." - Filipino Muslim proverb
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 World of Islam. All rights reserved.</p>
+            <p class="text-sm mt-2">Celebrating Diversity and Understanding</p>
+        </div>
+    </footer>
+</body>
+</html>

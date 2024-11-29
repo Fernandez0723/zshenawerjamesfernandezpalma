@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Islam: Culture and History</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .section-overlay {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-overlay::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .section-content {
+            position: relative;
+            z-index: 10;
+        }
+        .gallery-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-50 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center">
+                <span class="mr-2">🕌</span> World of Islam
+            </div>
+            <div class="space-x-6">
+                <a href="#home" class="hover:text-blue-300 transition duration-300">Home</a>
+                <a href="#types" class="hover:text-blue-300 transition duration-300">Types</a>
+                <a href="#history" class="hover:text-blue-300 transition duration-300">History</a>
+                <a href="#culture" class="hover:text-blue-300 transition duration-300">Culture</a>
+                <a href="ph-muslims.html" class="hover:text-blue-300 transition duration-300">Muslims in PH</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section-overlay h-screen flex items-center justify-center text-center"
+             style="background-image: url('images/background1.jpg');">
+        <div class="section-content text-white px-6">
+            <h1 class="text-5xl font-bold mb-6 text-white">The Rich World of Islam</h1>
+            <p class="text-xl max-w-3xl mx-auto text-white leading-relaxed">
+                A journey through the diverse traditions of Muslim communities worldwide, 
+                showcasing the depth of their culture, history, and spiritual beliefs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Types of Muslims Section -->
+    <section id="types" class="section-overlay py-16"
+             style="background-image: url('images/background17.jpg');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Main Types of Islam</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Gallery Items for Types -->
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background4.jpg" alt="Sunni Muslims" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Sunni Islam</h3>
+                    <p>The largest group of Muslims, representing approximately 85-90% of the global Muslim population, with a rich and diverse theological tradition.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background3.jpg" alt="Shia Muslims" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Shia Islam</h3>
+                    <p>The second-largest branch, primarily concentrated in Iran, Iraq, and other parts of the Middle East, with unique theological perspectives.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background5.jpg" alt="Sufi Muslims" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Sufism</h3>
+                    <p>The mystical dimension of Islam, focusing on personal spiritual growth, inner meditation, and direct experience of the divine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="section-overlay py-16"
+             style="background-image: url('images/background18.jpg');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">History of Islam</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background6.jpg" alt="Early Islam" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Origins</h3>
+                    <p>Islam began in 7th century Arabia, founded by Prophet Muhammad in Mecca, revolutionizing spiritual and social landscapes.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background7.jpg" alt="Islamic Expansion" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Expansion</h3>
+                    <p>Rapidly spread across the Middle East, North Africa, and later to Asia and other parts of the world, creating vast empires.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background8.jpg" alt="Islamic Golden Age" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Golden Age</h3>
+                    <p>The Islamic Golden Age (8th-14th centuries) marked unprecedented advancements in science, mathematics, philosophy, and arts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="section-overlay py-16"
+             style="background-image: url('images/background19.jpg');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Islamic Culture</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background9.jpg" alt="Islamic Learning" class="w-full h-64 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Love for Knowledge</h3>
+                    <p>Islam profoundly values education, with the first revelation emphasizing reading and learning. This has led to a rich intellectual tradition spanning centuries.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background10.jpg" alt="Islamic Architecture" class="w-full h-64 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Architectural Excellence</h3>
+                    <p>Islamic architecture is renowned for its intricate mosques, sophisticated geometric patterns, and profound spiritual symbolism in design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes Section -->
+    <section id="notes" class="section-overlay py-16 bg-gray-100"
+             style="background-image: url('images/background20.jpg');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Important Notes</h2>
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-90 p-8 rounded-lg shadow-xl">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-700">A Message of Understanding</h3>
+                <p class="mb-4">
+                    This website aims to provide a general overview of Islam, its diverse traditions, and rich cultural heritage. 
+                    It's crucial to understand that Islam, like any major world religion, is complex, multifaceted, and cannot be fully captured in a single narrative.
+                </p>
+                <h4 class="text-xl font-semibold mb-2 text-blue-600">Key Considerations:</h4>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Islam is not monolithic. There are diverse interpretations, practices, and cultural expressions.</li>
+                    <li>Individual Muslim experiences vary greatly across different regions and personal backgrounds.</li>
+                    <li>This overview is meant to promote understanding and respect for the richness of Islamic traditions.</li>
+                    <li>For deeper understanding, engage directly with Muslim communities and scholarly sources.</li>
+                </ul>
+                <p class="mt-4 italic text-gray-600">
+                    "Seek knowledge from the cradle to the grave." - Islamic Proverb
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 World of Islam. All rights reserved.</p>
+            <p class="text-sm mt-2">Created with respect and understanding</p>
+        </div>
+    </footer>
+</body>
+</html>

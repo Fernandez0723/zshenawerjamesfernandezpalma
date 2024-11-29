@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muslims in the Philippines</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .section-overlay {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-overlay::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .section-content {
+            position: relative;
+            z-index: 10;
+        }
+        .gallery-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-50 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center">
+                <span class="mr-2">🕌</span> World of Islam
+            </div>
+            <div class="space-x-6">
+                <a href="index.html#home" class="hover:text-blue-300 transition duration-300">Home</a>
+                <a href="index.html#types" class="hover:text-blue-300 transition duration-300">Types</a>
+                <a href="index.html#history" class="hover:text-blue-300 transition duration-300">History</a>
+                <a href="index.html#culture" class="hover:text-blue-300 transition duration-300">Culture</a>
+                <a href="ph-muslims.html" class="hover:text-blue-300 transition duration-300">Muslims in PH</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section-overlay h-screen flex items-center justify-center text-center"
+             style="background-image: url('images/background2.jpg');">
+        <div class="section-content text-white px-6">
+            <h1 class="text-5xl font-bold mb-6 text-white">Muslims in the Philippines</h1>
+            <p class="text-xl max-w-3xl mx-auto text-white leading-relaxed">
+                Exploring the rich history, diverse communities, and significant contributions 
+                of Filipino Muslims to the nation's cultural tapestry.
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section-overlay py-16"
+             style="background-image: url('images/background12.jpg');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Historical Overview</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background14.jpg" alt="Pre-Colonial Islam" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Pre-Colonial Roots</h3>
+                    <p>Islam arrived in the Philippines through Arab traders and Malay missionaries as early as the 13th century, long before Spanish colonization.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background15.jpg" alt="Muslim Sultanates" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Sultanates</h3>
+                    <p>Powerful Muslim sultanates like Sulu and Maguindanao developed sophisticated political and social systems, resisting Spanish colonization.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/background16.jpg" alt="Modern Filipino Muslims" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Contemporary Presence</h3>
+                    <p>Today, Muslims comprise about 5-6% of the Philippine population, primarily in Mindanao and parts of the Sulu Archipelago.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regions Section -->
+    <section id="regions" class="section-overlay py-16"
+             style="background-image: url('images/background11.jpg');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Key Muslim Regions</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/mindanao.jpg" alt="Mindanao" class="w-full h-64 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Mindanao</h3>
+                    <p>The primary homeland of Filipino Muslims, with significant populations of Maguindanaon, Maranao, and Tausug peoples. Home to the Autonomous Region in Muslim Mindanao (ARMM).</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/solo.jpg" alt="Sulu Archipelago" class="w-full h-64 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Sulu Archipelago</h3>
+                    <p>A historic center of Islamic culture, known for the Sultanate of Sulu and rich maritime traditions. Home to diverse ethnic groups like the Tausug and Sama-Bajau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethnic Groups Section -->
+    <section id="ethnic-groups" class="section-overlay py-16"
+             style="background-image: url('images/background13.jpg');">
+        <div class="container mx-auto px-6 section-content">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Muslim Ethnic Groups</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/maguindanaon.jpg" alt="Maguindanaon" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Maguindanaon</h3>
+                    <p>The largest Muslim ethnic group in Mindanao, primarily inhabiting the Maguindanao province. Known for their rich agricultural traditions and sophisticated sultanate system.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/tausug.jpg" alt="Tausug" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Tausug</h3>
+                    <p>The dominant ethnic group in the Sulu Archipelago, renowned for their maritime culture, warrior traditions, and strong Islamic identity.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/maranao.jpg" alt="Maranao" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Maranao</h3>
+                    <p>Inhabiting the areas around Lake Lanao in Lanao del Sur, famous for their intricate artwork, including the torogan (traditional royal house) and malong textiles.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/Sama-Bajau.jpg" alt="Sama-Bajau" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Sama-Bajau</h3>
+                    <p>Often referred to as "sea nomads," these maritime people are spread across the southern Philippines, known for their unique sea-based lifestyle and culture.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/yakan.jpg" alt="Sama-Bajau" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Yakan</h3>
+                    <p>The Yakans are concentrated in Tipo-tipo ,Lamitan, Sumisip, and Tuburan in the Basilan Island of ARMM. There are also scattered populations on the islands of Sakol, Malanipa, and Tumalutad east of the Zamboanga Peninsula. The word Yakan means “Dayak Origin,” as they are believed to be descendants of the Orang Dyaks or Tagihamas of eastern Indonesia. They speak a dialect of Sama language and are culturally influenced in some respect by the Tausug.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/jamamapun.jpg" alt="Sama-Bajau" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">jama mapun</h3>
+                    <p>Jama Mapun is from the word Jama meaning people, and Mapun which indicates the name of the Island Municipality of Mapun, thus called the “People of Mapun” . They are one of the Bangsamoro Ethnic tribes in the Philippines. They are the Sama-speaking people widely known for their creativity and traditions.</p>
+                </div>
+                <div class="gallery-item bg-white bg-opacity-90 p-6 rounded-lg shadow-xl">
+                    <img src="images/iranun.jpg" alt="Sama-Bajau" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Iranun</h3>
+                    <p>The Illanun, called Iranun and Ilianon as well, are closely related culturally and linguistically to the Maranao and Maguindanaon. The Illanun language is part of the Austronesian family that is most closely related to Maranao. When the Spaniards left, however, contact between the Maranao and Illanun decreased.</p>
+                </div>
